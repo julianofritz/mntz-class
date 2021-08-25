@@ -1,0 +1,19 @@
+{
+  "name": "juliano/mntz-class",
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "sempro/phpunit-pretty-print": "^1.4"
+  },
+  "authors": [
+    {
+      "name": "juliano.basso",
+      "email": "julianofritz@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mntz\\": "src"
+    }
+  },
+  "require": {}
+}
