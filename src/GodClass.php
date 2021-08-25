@@ -87,10 +87,4 @@ class GodClass
 
         return $range;
     }
-
-    private function dd($val)
-    {
-        var_dump($val);
-        die();
-    }
 }
