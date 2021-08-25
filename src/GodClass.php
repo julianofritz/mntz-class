@@ -16,7 +16,7 @@ class GodClass
     /** @var int */
     private $totalGames;
 
-    /** @var int */
+    /** @var array */
     private $games;
 
     public function __construct(int $dozensQuantity, int $totalGames)
@@ -25,6 +25,7 @@ class GodClass
             throw new \Exception('Dozen quantity not allowed!', 007);
         }
 
+        $this->result = [];
         $this->dozensQuantity = $dozensQuantity;
         $this->totalGames = $totalGames;
     }
@@ -50,17 +51,15 @@ class GodClass
 
     public function startGame(): array
     {
-        $game = [];
-
         for ($i = 0; $i < 6; $i++) {
             do {
                 $sortedNumber = array_rand($this->getRangeBetweenOneToSixty());
-            } while (in_array($sortedNumber, $game));
+            } while (in_array($sortedNumber, $this->result));
 
-            $game[$i] = $sortedNumber;
+            $this->result[$i] = $sortedNumber;
         }
 
-        return $game;
+        return $this->result;
     }
 
     public function viewTableOfGames(): string
