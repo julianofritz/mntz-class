@@ -30,14 +30,14 @@ class GodClass
         $this->totalGames = $totalGames;
     }
 
-    public function setDozen(int $dozen): void
+    public function setDozen(int $dozenQuantity): void
     {
-        $this->dozen = $dozen;
+        $this->dozensQuantity = $dozenQuantity;
     }
 
     public function getDozen(): int
     {
-        return $this->dozen;
+        return $this->dozensQuantity;
     }
 
     public function getAllGames(): array

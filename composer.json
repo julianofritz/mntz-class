@@ -15,5 +15,7 @@
       "Mntz\\": "src"
     }
   },
-  "require": {}
+  "require": {
+    "phpstan/phpstan": "^0.12.96"
+  }
 }
