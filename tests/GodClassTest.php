@@ -33,7 +33,7 @@ class GodClassTest extends TestCase
         $this->assertEquals(2, count($games));
     }
 
-    public function testEachGamesShouldHasSixNumbers()
+    public function testEachGameShouldHasSixNumbers()
     {
         $games = $this->godClass->getAllGames();
 
